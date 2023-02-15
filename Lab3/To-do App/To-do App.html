@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>To-Do List</title>
+  </head>
+
+  <body>
+    <style>
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+      text-align: center;
+      margin-top: 30px;
+      }
+
+      #app {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      form {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        width: 70%;
+      }
+
+      button[type="submit"] {
+        padding: 10px;
+        background-color: #3a04ff;
+        color: white;
+        border: none;
+        width: 30%;
+        cursor: pointer;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .checkbox {
+        margin-right: 10px;
+      }
+
+      .delete {
+        margin-left: auto;
+        padding: 5px;
+        background-color: #f44336;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+
+    <h1>To-Do List</h1>
+    <div id="app">
+      <form id="form">
+        <input type="text" id="new-item-input" placeholder="New Task" />
+        <button type="submit">Add</button>
+      </form>
+      <ul id="list"></ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
