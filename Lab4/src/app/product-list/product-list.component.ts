@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { NgOptimizedImage } from '@angular/common'
 import { products } from '../products';
 
 @Component({
@@ -17,6 +17,8 @@ export class ProductListComponent {
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
   }
+
+
 }
 
 
